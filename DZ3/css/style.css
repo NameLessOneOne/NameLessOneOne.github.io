@@ -7,7 +7,7 @@
 .wrapper {
     margin: 0 auto;
     width: 1060px;
-    height: 10000px;
+    height: 100vh;
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
     /*background-color: cyan;*/
 }
