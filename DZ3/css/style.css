@@ -7,8 +7,8 @@
 .wrapper {
     margin: 0 auto;
     width: 1060px;
-    height: 950px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    height: 10000px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
     /*background-color: cyan;*/
 }
 
@@ -71,7 +71,7 @@ header {
     display: block;
     box-sizing: border-box;
     padding-left: 22px;
-    color: black;
+    color: #656363;
     line-height: 39px;
     text-decoration: none;
     font-size: 13px;
@@ -81,7 +81,8 @@ header {
 .menu2 a:hover {
     box-sizing: border-box;
     padding-left: 35px;
-    /*background-color: cyan;*/
+    color: #2c2c2c;
+    background-color: #f9f9f9;
 }
 
 .menu2 li {
@@ -91,7 +92,7 @@ header {
     border-right: 1px solid #c8c8c8;
 }
 
-.menu2_last_box {
+.menu2 li:last-child {
     border-top: 1px solid #c8c8c8;
     border-left: 1px solid #c8c8c8;
     border-right: 1px solid #c8c8c8;
@@ -105,7 +106,7 @@ header {
     border: 1px solid #c8c8c8;
 }
 
-.description {
+.main_pic_description {
     margin: 32px 0px 0px 358px;
     width: 645px;
     height: 150px;
@@ -136,7 +137,7 @@ footer a {
     box-sizing: border-box;
     margin-right: 46px;
     padding: 0 25px;
-    color: black;
+    color: #2c2c2c;
     line-height: 40px;
     text-decoration: none;
     font-size: 14px;
@@ -153,6 +154,7 @@ footer a:hover {
     padding-right: 40px;
     text-align: right;
     line-height: 29px;
+    color: #2c2c2c;
     font-size: 13px;
     font-family: "Myriad Pro";
 }
