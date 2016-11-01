@@ -19,10 +19,15 @@ body {
 
 /* HEADER */
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 .logo {
     width: 50%;
     float: left;
-    ;
     position: relative;
     height: 175px;
 }
@@ -99,7 +104,7 @@ body {
     background-repeat: no-repeat;
     list-style: none;
     display: block;
-    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.76);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.76);
 }
 
 .menu ul:after {
@@ -178,7 +183,29 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.85);
 }
 
-.submenu>li {
+.submenu2 {
+    display: none;
+    position: absolute;
+    width: 120px;
+    height: 125px;
+    top: 30px;
+    left: 1px;
+    background-color: #303030;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.85);
+}
+
+.submenu3 {
+    display: none;
+    position: absolute;
+    width: 138px;
+    height: 125px;
+    top: 30px;
+    left: 1px;
+    background-color: #303030;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.85);
+}
+
+.submenu>li .submenu2>li .submenu3>li {
     display: block;
 }
 
@@ -192,11 +219,35 @@ body {
     text-decoration: none;
 }
 
-.submenu>li>a:hover {
-    text-decoration: underline;
+.submenu2>li>a {
+    display: block;
+    padding: 5px 0 5px 9px;
+    color: white;
+    color: white;
+    font-family: Tahoma;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.submenu3>li>a {
+    display: block;
+    padding: 5px 0 5px 9px;
+    color: white;
+    color: white;
+    font-family: Tahoma;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .menu>li:hover>ul.submenu {
+    display: block;
+}
+
+.menu>li:hover>ul.submenu2 {
+    display: block;
+}
+
+.menu>li:hover>ul.submenu3 {
     display: block;
 }
 
@@ -211,7 +262,7 @@ body {
 .leftColumn {
     width: 210px;
     /*height: 546px;*/
-/*background-image: url(../img/content_bar_background.jpg);*/
+    /*background-image: url(../img/content_bar_background.jpg);*/
     float: left;
     background: #edeef0;
     padding-bottom: 20000px;
@@ -245,7 +296,7 @@ body {
     border-right: 1px solid #c7cacf;
 }
 
-.content h1 {
+.content h1, h2 {
     padding: 10px 0 4px 0;
     color: #424c43;
     font-family: Tahoma;
