@@ -1,6 +1,7 @@
 body {
     background-image: url(../img/Background.jpg);
     background-repeat: repeat-x;
+    background-color: #0c739f;
     /*background-position: center;
     background-image: url(../img/layout.jpg);
     background-repeat: no-repeat;
@@ -317,7 +318,7 @@ body {
 /* FOOTER */
 
 footer {
-    padding: 10px 0;
+    padding: 25px 0;
     text-align: center;
     opacity: 0.8;
     color: white;
