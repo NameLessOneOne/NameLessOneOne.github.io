@@ -1,0 +1,341 @@
+@media screen and (min-width: 785px) {
+    .centered {
+        margin: 0 auto;
+        width : 768px;
+    }
+    /* wrapper 1 */
+    .wrapper1 {
+        width : 768px;
+        height: 700px;
+    }
+
+    .login {
+        justify-content: flex-end;
+        padding        : 37px 47px 0 0;
+    }
+
+    .title-block__h1 {
+        margin: -26px 496px 148px 0;
+    }
+
+    .title-block__text1 {
+        margin     : 0 100px 25px;
+        font-size  : 51px;
+        line-height: 63px;
+    }
+
+    .title-block__text2 {
+        margin   : 10px 40px 38px;
+        font-size: 21px;
+    }
+
+    .button-find {
+        width: 223px;
+    }
+    /* wrapper 2 */
+    .steps {
+        height         : 400px;
+        flex-direction : row;
+        justify-content: space-around;
+    }
+
+    .steps__h2 {
+        padding: 96px 5px 36px;
+    }
+
+    .steps__layout {
+        padding: 0;
+        width  : 238px;
+        height : 400px;
+    }
+
+    .steps__2,
+    .steps__3 {
+        margin: 0;
+    }
+
+    .main-carousel {
+        position: relative;
+        width   : 238px;
+        height  : 400px;
+        overflow: hidden;
+    }
+
+    .carousel-cell {
+        height: 400px;
+    }
+    // carousel buttons
+    .previous {
+        display         : block;
+        height          : 56px;
+        width           : 37px;
+        position        : absolute;
+        left            : 10%;
+        top             : 10%;
+        background-color: transparent;
+        outline         : none;
+        border          : none;
+        background-image: url("../img/steps-arrows_sprite.png");
+    }
+
+    .next {
+        display            : block;
+        height             : 56px;
+        width              : 37px;
+        position           : absolute;
+        top                : 10%;
+        right              : 10%;
+        background-color   : transparent;
+        outline            : none;
+        border             : none;
+        background-image   : url("../img/steps-arrows_sprite.png");
+        background-position: right;
+    }
+    /* wrapper 3 */
+    .partner {
+        height         : 508px;
+        width          : 496px;
+        margin         : 0 auto;
+        display        : flex;
+        flex-wrap      : wrap;
+        flex-direction : column;
+        justify-content: space-around;
+    }
+
+    .partner__h2 {
+        padding: 96px 5px 0;
+    }
+
+    .partner__item {
+        width     : 249px;
+        height    : 188px;
+        margin    : 31px 0 26px;
+        text-align: center;
+    }
+
+    .partner__a {
+        display        : block;
+        width          : 121px;
+        margin         : 0 auto;
+        text-decoration: none;
+    }
+
+    .partner__text2 {
+        margin: 13px 15px 27px;
+    }
+
+    .button-partners {
+        width     : 188px;
+        margin-top: 57px;
+    }
+
+    .steps__button {
+        margin: 212px 0 0 22px;
+    }
+
+    .steps__button_step2 {
+        margin-top: 255px;
+    }
+
+    .steps__text1 {
+        margin: 20px 20px 0 19px;
+    }
+
+    .steps__text2 {
+        margin: 15px 19px 0 17px;
+    }
+    /* wrapper 4 */
+    .grid {
+        margin: 0 1.3%; //10px;
+    }
+
+    .grid-item,
+    .grid-sizer {
+        height    : 310px;
+        width     : 31.5%;
+        margin    : 0 0 20px;
+        text-align: center;
+    }
+
+    .gutter-sizer {
+        width: 2.75%;
+    }
+
+    .grid-item--width2 {
+        width: 65.75%;
+    }
+
+    .holiday-pics__text {
+        padding    : 0 20px;
+        box-sizing : border-box;
+        z-index    : 3;
+        line-height: 310px;
+    }
+
+    .holiday-form__layout {
+        display        : flex;
+        flex-direction : row;
+        justify-content: center;
+        padding-top    : 39px;
+        margin-bottom  : 61px;
+    }
+
+    .holiday-form__input {
+        margin: 0 0 0 -6px;
+        width : 216px;
+        height: 35px;
+    }
+
+    .holiday-form__button {
+        margin: 0 0 0 10px;
+        height: 39px;
+        width : 160px;
+    }
+
+    .holiday-h2_bottom {
+        padding-top: 77px;
+    }
+    /* wrapper 5 */
+    .footer__h2 {
+        margin    : 0 0 0 41px;
+        text-align: left;
+    }
+
+    .footer {
+        display       : flex;
+        flex-direction: row;
+    }
+
+    .footer__company-text {
+        margin-top    : 11px;
+        flex-direction: column;
+    }
+
+    .footer__h2 {
+        margin: 0 38px 0 41px;
+    }
+
+    .footer__text1 {
+        margin: 0 50px 4px;
+    }
+
+    .footer__text2 {
+        padding    : 0;
+        margin-left: 48px;
+        line-height: 24px;
+    }
+
+    .footer__text3 {
+        margin: 0 0 0 63px;
+    }
+
+    .footer__text4 {
+        margin: 5px 0 0 67px;
+    }
+
+    .footer__text5 {
+        margin: 1px 0 0 67px;
+    }
+
+    .footer__logo-pic {
+        top: 14%;
+    }
+}
+@media screen and (min-width: 957px) {
+    .centered {
+        margin: 0 auto;
+        width : 940px;
+    }
+    /* wrapper 1 */
+    .wrapper1 {
+        width: 100%;
+    }
+
+    .login {
+        margin-left    : 770px;
+        justify-content: center;
+        padding        : 37px 0 0;
+    }
+
+    .title-block__h1 {
+        margin: -26px 760px 148px 0;
+    }
+
+    .title-block__text1 {
+        margin     : 0 230px 25px;
+        font-size  : 51px;
+        line-height: 63px;
+    }
+    /* wrapper 2 */
+    .steps {
+        justify-content: space-between;
+    }
+
+    .steps__button {
+        margin: 227px 0 0 22px;
+    }
+
+    .steps__button_step2 {
+        margin-top: 257px;
+    }
+
+    .main-carousel {
+        position: relative;
+        width   : 300px;
+        height  : 400px;
+        overflow: hidden;
+    }
+
+    .steps__layout {
+        padding: 0;
+        width  : 300px;
+        height : 400px;
+    }
+
+    .previous {
+        left: 7%;
+        top : 37%;
+    }
+
+    .next {
+        right: 7%;
+        top  : 37%;
+    }
+    /* wrapper 3 */
+    .partner {
+        height         : 248px;
+        width          : 950px;
+        justify-content: space-between;
+    }
+
+    .partner__item {
+        width : 228px;
+        height: 188px;
+    }
+
+    .partner__text2 {
+        margin: 13px 0 27px;
+    }
+    /* wrapper 4 */
+    .grid {
+        margin: 0;
+    }
+    /* wrapper 5 */
+    .footer__h2 {
+        margin: 0 52px 0 0;
+    }
+
+    .footer__text1 {
+        margin: 0 47px 4px;
+    }
+
+    .footer__logo {
+        width      : 182px;
+        margin-left: 285px;
+    }
+
+    .footer__logo-pic {
+        top : 17%;
+        left: 25%;
+    }
+}
