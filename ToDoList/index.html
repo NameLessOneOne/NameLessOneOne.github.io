@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+    <script data-main="js/app.js" src="js/require.js"></script>
+    <!-- <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script> -->
+
+</head>
+
+<body>
+
+    <script type="text/template" id="wrapper-template">
+        <div class="wrapper">
+            <h1>ToDo List</h1>
+            <ul class="item-list"></ul>
+            <div class="controlls">
+                <input type="text" class="item-value">
+                <button class="item-add">Add</button>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/template" id="list-template">
+        <% for (var i = 0; i < data.length; i++) { %>
+            <li>
+                <p>
+                    <%=data[i] %>
+                </p>
+                <button data-value="<%= data[i] %>" class="item-delete">Clear</button>
+                <button data-value="<%= data[i] %>" class="btn-edit">Edit</button>
+            </li>
+            <% }; %>
+
+    </script>
+
+</body>
+
+</html>
