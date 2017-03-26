@@ -1,0 +1,40 @@
+@media screen and (max-width: 320px) {
+    .wrapper {
+      box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin          : 0 auto;
+        width           : 320px;
+        position        : relative;
+        border-radius   : 20px;
+    }
+
+    .fontRegular, .fontRegularBold {
+        font-size: 19px;
+    }
+
+    .header {
+        font-size: 27px;
+    }
+
+    .personalInfo {
+      width: 100%;
+      height     : 420px;
+      line-height: 30px;
+    }
+    .personalInfo__img-block {
+      margin: 0 auto;
+        width  : 150px;
+        height : 174px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+
+    .personalInfo__img {
+        position: static;
+    }
+
+    // .article {
+    //   width: 90%;
+    // }
+}

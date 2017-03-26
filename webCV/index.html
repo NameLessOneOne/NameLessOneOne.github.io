@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume Kyrylo Kletchenkov</title>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
     <!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
     <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
-    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
     <script src="js/script.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
 
 </head>
 
@@ -23,9 +23,12 @@
 
     <div class="wrapper">
 
-        <header class="fontRegular centered">Kyrylo Kletchenkov</header>
+        <header class="header fontRegular centered">Kyrylo Kletchenkov</header>
 
         <ul class="personalInfo fontRegular">
+            <a data-fancybox class="personalInfo__img-block" href="img/avatar.jpg">
+                <img class="personalInfo__img" src="img/avatar.jpg" alt="Avatar">
+            </a>
             <li><span class="fontRegularBold">Date of birth:</span> 9 May 93</li>
             <li><span class="fontRegularBold">Residence:</span> Ukraine, Kyiv</li>
             <li><a href="skype:kyrylo.kletchenkov@gmail.com?chat"><span class="fontRegularBold">Skype:</span> Kyrylo Kletchenkov</a></li>
@@ -33,10 +36,10 @@
             <li><a href="mailto:kyrylo.kletchenkov@gmail.com"><span class="fontRegularBold">E-mail:</span> kyrylo.kletchenkov@gmail.com</a></li>
             <li class="fontRegularBold"><a href="https://github.com/NameLessOneOne">Git</a></li>
             <li class="fontRegularBold"><a href="https://www.linkedin.com/in/kyrylo-kletchenkov-323a55139/">LinkedIn</a></li>
-            <img class="personalInfo__img" src="img/avatar.jpg" alt="Avatar">
+
         </ul>
 
-        <div>
+        <div class="article">
             <h3 class="fontRegularBold extend">Objective:</h3>
             <div class="objective fontRegular extend__text">
                 <p>Junior FrontEnd developer. Looking for this position because i'm always moving forward and this job has a great perspective for me. Due to my fast learning want to bring maximum benefit to the company asap.</p>
@@ -49,8 +52,11 @@
                         <li>Technologies:</li>
                         <li>&nbsp;</li>
                         <li>Methodology:</li>
+                        <!-- <li>&nbsp;</li> -->
                         <li>Frameworks and libraries:</li>
+                        <!-- <li>&nbsp;</li> -->
                         <li>Development Tools:</li>
+                        <!-- <li>&nbsp;</li> -->
                         <li>Programming languages:</li>
                     </ul>
                     <ul class="markup__column2">
@@ -132,6 +138,7 @@
             </div>
 
         </div>
+
 
 
 </body>

@@ -15,6 +15,11 @@ $(document).ready(function() {
         // $(page).find('.flyout__minus').addClass('flyout_hide');
     }
 
+    $("[data-fancybox]").fancybox({
+        // Options will go here
+        zoom: false
+    });
+
 
     // $('.personalInfo__img').on('click', function() {
     //     var img = $(this);
@@ -51,9 +56,9 @@ $(document).ready(function() {
 
     // $('.personalInfo__img').toggle(true);
 
-    $("#accordion").accordion({
-        heightStyle: "content"
-        //  collapsible: true
-    });
+    // $("#accordion").accordion({
+    //     heightStyle: "content"
+    //     //  collapsible: true
+    // });
 
 });
