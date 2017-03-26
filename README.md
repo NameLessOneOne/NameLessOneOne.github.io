@@ -2,6 +2,6 @@
 
 URLAUBSGLÜCK (responsive, crossbrowser, pixelPerfect, mobileFirst)
 
-BuildYourBuisness (responsive, crossbrowser, pixelPerfect)
+BuildYourBuisness (crossbrowser, pixelPerfect)
 
 ToDoList (MVC, RequireJS)
