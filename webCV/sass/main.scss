@@ -64,7 +64,7 @@
     height       : 174px;
     display      : block;
     margin-bottom: 10px;
-    outline: none;
+    outline      : none;
 }
 
 .personalInfo__img {
@@ -74,7 +74,7 @@
     border-radius: 10px;
 }
 
-h3 {
+.h3-text {
     outline      : none;
     display      : block;
     padding      : 6px 0 0 5px;
@@ -83,9 +83,62 @@ h3 {
     border       : 2px solid grey;
     border-radius: 5px;
 }
+/* projects */
+.h3-text_main {
+    margin-bottom: 10px;
+}
 
+.carousel-cell__img1 {
+    background-size    : cover;
+    background-position: top;
+    background-image   : url("../img/URLAUBSGLÜCKPreview.jpg");
+}
+
+.carousel-cell__img2 {
+    background-size    : cover;
+    background-position: top;
+    background-image   : url("../img/buildHomePreview.jpg");
+}
+
+.carousel-cell__img3 {
+    background-size    : cover;
+    background-position: left;
+    background-image   : url("../img/toDoListPreview.jpg");
+}
+
+.main-carousel {
+    position        : relative;
+    background-color: white;
+    height          : 200px;
+    width           : 100%;
+    overflow        : hidden;
+    border-radius   : 5px;
+    margin-bottom: 20px;
+}
+
+.carousel-cell {
+    margin       : 0 auto;
+    height       : 200px;
+    width        : 100%;
+    border-radius: 5px;
+}
+/* carousel arrow color */
+.previous {
+    display: none;
+}
+
+.next {
+    display: none;
+}
+
+.flickity-prev-next-button .arrow {
+    fill: transparent;
+}
+
+.flickity-prev-next-button.no-svg {
+    color: transparent;
+}
 /* article */
-
 .objective {
     line-height: 25px;
 }

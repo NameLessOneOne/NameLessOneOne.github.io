@@ -15,6 +15,12 @@ $(document).ready(function() {
         // Options will go here
     });
 
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        wrapAround: true
+    });
 
     // $('.personalInfo__img').on('click', function() {
     //     var img = $(this);

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -110,7 +111,7 @@ table {
   height: 174px;
   border-radius: 10px; }
 
-h3 {
+.h3-text {
   outline: none;
   display: block;
   padding: 6px 0 0 5px;
@@ -118,6 +119,53 @@ h3 {
   line-height: 20px;
   border: 2px solid grey;
   border-radius: 5px; }
+
+/* projects */
+.h3-text_main {
+  margin-bottom: 10px; }
+
+.carousel-cell__img1 {
+  background-size: cover;
+  background-position: top;
+  background-image: url("../img/URLAUBSGLÜCKPreview.jpg"); }
+
+.carousel-cell__img2 {
+  background-size: cover;
+  background-position: top;
+  background-image: url("../img/buildHomePreview.jpg"); }
+
+.carousel-cell__img3 {
+  background-size: cover;
+  background-position: left;
+  background-image: url("../img/toDoListPreview.jpg"); }
+
+.main-carousel {
+  position: relative;
+  background-color: white;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 20px; }
+
+.carousel-cell {
+  margin: 0 auto;
+  height: 200px;
+  width: 100%;
+  border-radius: 5px; }
+
+/* carousel arrow color */
+.previous {
+  display: none; }
+
+.next {
+  display: none; }
+
+.flickity-prev-next-button .arrow {
+  fill: transparent; }
+
+.flickity-prev-next-button.no-svg {
+  color: transparent; }
 
 /* article */
 .objective {
@@ -164,12 +212,45 @@ h3 {
     overflow-y: scroll; }
   .wrapper {
     width: 780px; }
+  /* personal info */
   .personalInfo {
     height: 220px; }
   .personalInfo__img-block {
     position: absolute;
     right: 8%;
     top: 2%; }
+  /* projects */
+  .main-carousel {
+    height: 400px; }
+  .carousel-cell {
+    height: 400px; }
+  .flickity-prev-next-button .arrow {
+    fill: black; }
+  .flickity-prev-next-button.no-svg {
+    color: black; }
+  .previous {
+    display: block;
+    height: 83px;
+    width: 37px;
+    position: absolute;
+    left: 1%;
+    top: 40%;
+    background-color: rgba(200, 200, 200, 0.6);
+    border-radius: 5px;
+    outline: none;
+    border: none; }
+  .next {
+    display: block;
+    height: 83px;
+    width: 37px;
+    position: absolute;
+    right: 1%;
+    top: 40%;
+    background-color: rgba(200, 200, 200, 0.6);
+    border-radius: 5px;
+    outline: none;
+    border: none; }
+  /* article */
   .techSkills__technologies {
     margin-bottom: 50px; }
   .techSkills__frameworks {
