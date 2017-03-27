@@ -52,9 +52,6 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-body {
-  overflow-y: scroll; }
-
 .centered {
   margin: 0 auto; }
 
@@ -66,29 +63,32 @@ body {
   font-weight: bold; }
 
 .wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.1);
   margin: 0 auto;
-  padding: 20px 5% 35px;
-  width: 800px;
+  padding: 20px 20px 35px;
+  width: 320px;
   position: relative;
   border-radius: 20px; }
 
 .header {
   width: 90%;
   height: 40px;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center; }
 
-header:hover {
+.header:hover {
   /*text-shadow: 1px 1px 4px #000000;*/
   /*transition: top 1s ease-out 0.5s;*/ }
 
-ul a:hover {
+.link:hover {
   text-shadow: 1px 1px 4px grey; }
 
 /* personal info */
 .personalInfo {
-  height: 220px;
+  position: relative;
+  height: 400px;
   line-height: 30px; }
 
 .personalInfo a {
@@ -96,29 +96,30 @@ ul a:hover {
   color: black;
   cursor: pointer; }
 
+.personalInfo__img-block {
+  margin: 0 auto;
+  width: 150px;
+  height: 174px;
+  display: block;
+  margin-bottom: 10px;
+  outline: none; }
+
 .personalInfo__img {
   cursor: pointer;
   width: 150px;
   height: 174px;
-  border-radius: 10px;
-  position: absolute;
-  right: 78px;
-  top: 80px; }
+  border-radius: 10px; }
 
-/*.personalInfo__img:hover {
-  width: 125%;
-  height: 125%;
-}*/
 h3 {
   outline: none;
   display: block;
   padding: 6px 0 0 5px;
-  /*padding-top: 6px;*/
   height: 25px;
   line-height: 20px;
   border: 2px solid grey;
   border-radius: 5px; }
 
+/* article */
 .objective {
   line-height: 25px; }
 
@@ -128,8 +129,7 @@ h3 {
 .softSkills,
 .techSkills,
 .workExp {
-  line-height: 25px;
-  /*margin: 15px 0 15px 0;*/ }
+  line-height: 25px; }
 
 .markup {
   display: -webkit-box;
@@ -147,28 +147,34 @@ h3 {
 .markup__column2 {
   width: 55%; }
 
-@media screen and (max-width: 320px) {
+.techSkills__technologies {
+  margin-bottom: 150px; }
+
+.techSkills__frameworks {
+  margin-bottom: 25px; }
+
+.techSkills__devTools2 {
+  margin-bottom: 25px; }
+
+.educ__university {
+  margin-bottom: 75px; }
+
+@media screen and (min-width: 785px) {
+  body {
+    overflow-y: scroll; }
   .wrapper {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    width: 320px;
-    position: relative;
-    border-radius: 20px; }
-  .fontRegular, .fontRegularBold {
-    font-size: 19px; }
-  .header {
-    font-size: 27px; }
+    width: 780px; }
   .personalInfo {
-    width: 100%;
-    height: 420px;
-    line-height: 30px; }
+    height: 220px; }
   .personalInfo__img-block {
-    margin: 0 auto;
-    width: 150px;
-    height: 174px;
-    display: block;
-    margin-bottom: 10px; }
-  .personalInfo__img {
-    position: static; } }
+    position: absolute;
+    right: 8%;
+    top: 2%; }
+  .techSkills__technologies {
+    margin-bottom: 50px; }
+  .techSkills__frameworks {
+    margin-bottom: 0; }
+  .techSkills__devTools2 {
+    margin-bottom: 0; }
+  .educ__university {
+    margin-bottom: 0; } }

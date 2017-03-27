@@ -1,40 +1,35 @@
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 785px) {
+    body {
+        overflow-y: scroll;
+    }
+
     .wrapper {
-      box-sizing: border-box;
-        background-color: rgba(0, 0, 0, 0.1);
-        margin          : 0 auto;
-        width           : 320px;
-        position        : relative;
-        border-radius   : 20px;
-    }
-
-    .fontRegular, .fontRegularBold {
-        font-size: 19px;
-    }
-
-    .header {
-        font-size: 27px;
+        width: 780px;
     }
 
     .personalInfo {
-      width: 100%;
-      height     : 420px;
-      line-height: 30px;
+        height: 220px;
     }
+
     .personalInfo__img-block {
-      margin: 0 auto;
-        width  : 150px;
-        height : 174px;
-        display: block;
-        margin-bottom: 10px;
+        position: absolute;
+        right   : 8%;
+        top     : 2%;
     }
 
-
-    .personalInfo__img {
-        position: static;
+    .techSkills__technologies {
+        margin-bottom: 50px;
     }
 
-    // .article {
-    //   width: 90%;
-    // }
+    .techSkills__frameworks {
+        margin-bottom: 0;
+    }
+
+    .techSkills__devTools2 {
+        margin-bottom: 0;
+    }
+
+    .educ__university {
+        margin-bottom: 0;
+    }
 }

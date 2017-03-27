@@ -7,10 +7,6 @@
     font-style : normal;
 }
 
-body {
-    overflow-y: scroll;
-}
-
 .centered {
     margin: 0 auto;
 }
@@ -25,10 +21,11 @@ body {
 }
 
 .wrapper {
+    box-sizing      : border-box;
     background-color: rgba(0, 0, 0, 0.1);
     margin          : 0 auto;
-    padding         : 20px 5% 35px;
-    width           : 800px;
+    padding         : 20px 20px 35px;
+    width           : 320px;
     position        : relative;
     border-radius   : 20px;
 }
@@ -36,21 +33,22 @@ body {
 .header {
     width     : 90%;
     height    : 40px;
-    font-size : 20px;
+    font-size : 24px;
     text-align: center;
 }
 
-header:hover {
+.header:hover {
     /*text-shadow: 1px 1px 4px #000000;*/
     /*transition: top 1s ease-out 0.5s;*/
 }
 
-ul a:hover {
+.link:hover {
     text-shadow: 1px 1px 4px grey;
 }
 /* personal info */
 .personalInfo {
-    height     : 220px;
+    position   : relative;
+    height     : 400px;
     line-height: 30px;
 }
 
@@ -60,29 +58,33 @@ ul a:hover {
     cursor         : pointer;
 }
 
+.personalInfo__img-block {
+    margin       : 0 auto;
+    width        : 150px;
+    height       : 174px;
+    display      : block;
+    margin-bottom: 10px;
+    outline: none;
+}
+
 .personalInfo__img {
     cursor       : pointer;
     width        : 150px;
     height       : 174px;
     border-radius: 10px;
-    position     : absolute;
-    right        : 78px;
-    top          : 80px;
 }
-/*.personalInfo__img:hover {
-  width: 125%;
-  height: 125%;
-}*/
+
 h3 {
     outline      : none;
     display      : block;
     padding      : 6px 0 0 5px;
-    /*padding-top: 6px;*/
     height       : 25px;
     line-height  : 20px;
     border       : 2px solid grey;
     border-radius: 5px;
 }
+
+/* article */
 
 .objective {
     line-height: 25px;
@@ -95,7 +97,6 @@ h3 {
 .techSkills,
 .workExp {
     line-height: 25px;
-    /*margin: 15px 0 15px 0;*/
 }
 
 .markup {
@@ -104,11 +105,27 @@ h3 {
 }
 
 .markup__column1 {
-    width       : 40%;
+    width        : 40%;
     padding-right: 5%;
 }
 
 .markup__column2 {
     width: 55%;
+}
+
+.techSkills__technologies {
+    margin-bottom: 150px;
+}
+
+.techSkills__frameworks {
+    margin-bottom: 25px;
+}
+
+.techSkills__devTools2 {
+    margin-bottom: 25px;
+}
+
+.educ__university {
+    margin-bottom: 75px;
 }
 @import "mediaQueries";
