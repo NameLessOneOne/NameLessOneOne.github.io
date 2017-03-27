@@ -40,7 +40,7 @@ define(
             };
 
         }
-        var firstToDoList = ['learn javascript', 'learn html', 'lalalala'];
+        var firstToDoList = ['learn javascript', 'learn html', 'learn react'];
         var model = new Model(firstToDoList);
         return model;
     }
