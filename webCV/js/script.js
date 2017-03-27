@@ -19,7 +19,10 @@ $(document).ready(function() {
         // options
         cellAlign: 'left',
         contain: true,
-        wrapAround: true
+        wrapAround: true,
+        autoPlay: 2000,
+        selectedAttraction: 0.01,
+    friction: 0.15
     });
 
     // $('.personalInfo__img').on('click', function() {

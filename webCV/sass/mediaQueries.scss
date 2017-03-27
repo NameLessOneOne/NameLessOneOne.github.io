@@ -18,11 +18,17 @@
     }
     /* projects */
     .main-carousel {
+      outline: none;
         height: 400px;
     }
 
     .carousel-cell {
         height: 400px;
+    }
+
+    .carousel-cell__a {
+      top: 70%;
+      left: 8%;
     }
     // .main-carousel__overlay {
     //     position: absolute;
@@ -64,6 +70,10 @@
         border-radius   : 5px;
         outline         : none;
         border          : none;
+    }
+
+    .previous:hover, .next:hover {
+      background-color: rgba(1, 209, 251, 0.8);
     }
     /* article */
     .techSkills__technologies {
