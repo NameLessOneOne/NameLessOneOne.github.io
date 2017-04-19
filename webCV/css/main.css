@@ -57,9 +57,11 @@ table {
   margin: 0 auto; }
 
 .fontRegular {
+  font-size: 16px;
   font-family: 'ubuntuRegular', sans-serif; }
 
 .fontRegularBold {
+  font-size: 16px;
   font-family: 'ubuntuRegular', sans-serif;
   font-weight: bold; }
 
@@ -85,8 +87,8 @@ table {
 /* personal info */
 .personalInfo {
   position: relative;
-  height: 400px;
-  line-height: 30px; }
+  line-height: 30px;
+  margin-bottom: 10px; }
 
 .personalInfo a {
   text-decoration: none;
@@ -193,6 +195,17 @@ table {
   color: transparent; }
 
 /* article */
+.extend__text {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.35s ease-out;
+  transition: max-height 0.35s ease-out; }
+
+.extend__text_animationOn {
+  max-height: 1000px;
+  -webkit-transition: max-height 0.35s ease-in;
+  transition: max-height 0.35s ease-in; }
+
 .objective {
   line-height: 25px; }
 
