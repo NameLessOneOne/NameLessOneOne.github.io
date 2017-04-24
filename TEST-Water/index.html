@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Water</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+</head>
+
+<body>
+
+  <div class="wrapper banner">
+    <h1 class="banner__text1 font"><span>Водные игровые </span>площадки</h1>
+    <p class="banner__text2 font">Добавьте дополнительную ценность Вашему развлекательному комплексу</p>
+    <div class="banner__grid">
+      <a class="banner__tel font" href="tel:+380441234567">+38 (044) 123 45 67</a>
+      <button id="modalWindow" class="banner__button font">заказать проект</button>
+      <div id="modal-form" class="modal-form">
+        <span id="modal-close">X</span>
+        <form action="">
+          <input class="modal-form__input" type="text" placeholder="Имя">
+          <input class="modal-form__input" type="text" placeholder="Фамилия">
+          <input class="modal-form__input" type="text" placeholder="E-mail">
+          <button class="modal-form__button">Отправить</button>
+        </form>
+      </div>
+      <div id="overlay"></div>
+    </div>
+  </div>
+  
+  <div class="wrapper1 calc">
+    <h2 class="font calc__text1 font">Калькулятор окупаемости</h2>
+    <div class="calc__text-grid">
+      <p class="font calc__text2 calc__text2_left font">некоммерческий</p>
+      <p class="font calc__text2 font calc__text2_active">коммерческий</p>
+      <p class="font calc__text2 calc__text2_right font">частный</p>
+    </div>
+    <div class="profit-grid">
+      <div class="count-grid">
+        <div id="slider" class="slider"></div>
+        <p>
+          <label class="count-grid__label font" for="amount font">выберите количество посетителей</label>
+          <input type="text" id="amount" class="count-grid__input" readonly style="border:0; color:#f6931f; font-weight:bold;">
+        </p>
+        <div id="slider1" class="slider1"></div>
+        <p>
+          <label class="count-grid__label1 font" for="amount1 font">выберите количество дней отдыха</label>
+          <input type="text" id="amount1" class="count-grid__input" readonly style="border:0; color:#f6931f; font-weight:bold;">
+        </p>
+        <div id="slider2" class="slider2"></div>
+        <p>
+          <label class="count-grid__label2 font" for="amount2 font">выберите количество часов</label>
+          <input type="text" id="amount2" class="count-grid__input" readonly style="border:0; color:#f6931f; font-weight:bold;">
+        </p>
+      </div>
+      <div class="circle">
+        <p class="cirlce__text1 font">увеличение прибыли</p>
+        <p id="revenue" class="circle__text2 font">+ <span>$169</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper2 slider-block">
+    <h2 class="slider-block__text font">Виды водных игровых площадок:</h2>
+    <div class="sliders">
+      <div data-nav="false" class="fotorama slider_1">
+        <img src="img/bottom-slider1.jpg" alt="">
+        <img src="img/bottom-slider1.jpg" alt="">
+      </div>
+      <div data-nav="false" class="fotorama slider_2">
+        <img src="img/bottom-slider2.jpg" alt="">
+        <img src="img/bottom-slider2.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
