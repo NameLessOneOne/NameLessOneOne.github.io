@@ -41,29 +41,8 @@ $(document).ready(function() {
     time = 1;
 
   function recount() {
-    var clientDays = client + days;
-    var percent = 1.13;
-    if (time == 1) {
-      revenue = percent * (clientDays);
-    } else if (time == 2) {
-      revenue = percent * (percent * (clientDays));
-    } else if (time == 3) {
-      revenue = percent * (percent * (percent * (clientDays)));
-    } else if (time == 4) {
-      revenue = percent * (percent * (percent * (percent * (clientDays))));
-    } else if (time == 5) {
-      revenue = percent * (percent * (percent * (percent * (percent * (clientDays)))));
-    } else if (time == 6) {
-      revenue = percent * (percent * (percent * (percent * (percent * (percent * (clientDays))))));
-    } else if (time == 7) {
-      revenue = percent * (percent * (percent * (percent * (percent * (percent * (percent * (clientDays)))))));
-    } else if (time == 8) {
-      revenue = percent * (percent * (percent * (percent * (percent * (percent * (percent * (percent * (clientDays))))))));
-    } else if (time == 9) {
-      revenue = percent * (percent * (percent * (percent * (percent * (percent * (percent * (percent * (percent * (clientDays)))))))));
-    } else if (time == 10) {
-      revenue = percent * (percent * (percent * (percent * (percent * (percent * (percent * (percent * (percent * (percent * (clientDays))))))))));
-    }
+    var degree = Math.pow(1.13,time);
+    revenue = degree * (client + days);
     result_outptut.html('$' + revenue.toFixed(0));
   }
   $(document).on("change", "#amount", function() {
