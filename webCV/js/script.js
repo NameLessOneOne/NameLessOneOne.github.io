@@ -1,21 +1,24 @@
 setInterval(function() {
-    var borderWidthVal = document.documentElement.clientWidth,
-    triangleDiv = document.querySelector('.triangle');
-    // document.querySelector('.wrapper3-triangle').style.borderLeft = borderWidth + 'px solid transparent';
-    document.querySelector('.triangle').style.borderRight = borderWidthVal + 'px solid transparent',
-    element = borderWidthVal + 'px solid transparent';
+    var borderWidthVal = document.documentElement.clientWidth;
+    // var triangleDiv = document.querySelector('.triangle');
 
-    if (borderWidthVal < 550) {
-      triangleDiv.style.cssText = 'border-top: 2080px solid rgba(1, 209, 251, 0.6);';
-    } else if (borderWidthVal < 785) {
-      triangleDiv.style.cssText = 'border-top: 580px solid rgba(1, 209, 251, 0.6);';
-    } else if (borderWidthVal < 1076) {
-      triangleDiv.style.cssText = 'border-top: 380px solid rgba(1, 209, 251, 0.6);';
-    } else if (borderWidthVal < 1500) {
-      triangleDiv.style.cssText = 'border-top: 220px solid rgba(1, 209, 251, 0.6);';
-    } else {
-      triangleDiv.style.cssText = 'border-top: 150px solid rgba(1, 209, 251, 0.6);';
-    }
+    document.querySelector('.triangle').style.borderLeft = borderWidthVal + 'px solid transparent',
+    element = borderWidthVal + 'px solid transparent';
+    //
+    // if (borderWidthVal < 550) {
+    //   triangleDiv.style.cssText = 'border-top: 1080px solid rgba(1, 209, 251, 0.6);';
+    // } else {
+    //   triangleDiv.style.cssText = 'border-top: 150px solid rgba(1, 209, 251, 0.6);';
+    // }
+    // if (borderWidthVal < 785) {
+    //   triangleDiv.style.cssText = 'border-top: 580px solid rgba(1, 209, 251, 0.6);';
+    // } else if (borderWidthVal < 1076) {
+    //   triangleDiv.style.cssText = 'border-top: 380px solid rgba(1, 209, 251, 0.6);';
+    // } else if (borderWidthVal < 1500) {
+    //   triangleDiv.style.cssText = 'border-top: 220px solid rgba(1, 209, 251, 0.6);';
+    // } else {
+    //   triangleDiv.style.cssText = 'border-top: 150px solid rgba(1, 209, 251, 0.6);';
+    // }
 
 }, 300);
 
