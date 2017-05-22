@@ -68,18 +68,23 @@ table {
 .wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   padding: 20px 20px 35px;
   width: 320px;
   position: relative;
   border-radius: 20px; }
 
+.triangle {
+  position: absolute;
+  border-left: 1920px solid transparent;
+  border-top: 150px solid rgba(1, 209, 251, 0.6); }
+
 .header {
   width: 90%;
   height: 40px;
   font-size: 24px;
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 .link:hover {
   color: #01d1fb; }
@@ -146,6 +151,11 @@ table {
   background-position: left;
   background-image: url("../img/toDoListPreview.jpg"); }
 
+.carousel-cell__img4 {
+  background-size: cover;
+  background-position: left;
+  background-image: url("../img/calculator.jpg"); }
+
 .main-carousel {
   position: relative;
   background-color: white;
@@ -172,8 +182,7 @@ table {
   padding: 10px;
   top: 55%;
   left: 8%;
-  width: 200px;
-  height: 65px; }
+  width: 200px; }
 
 .carousel-cell__a p {
   color: black; }
