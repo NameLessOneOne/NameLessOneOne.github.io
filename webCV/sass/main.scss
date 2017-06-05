@@ -114,20 +114,26 @@
 
 .carousel-cell__img2 {
   background-size    : cover;
-  background-position: top;
-  background-image   : url("../img/buildHomePreview.jpg");
+  background-position: left;
+  background-image   : url("../img/AniartProject.jpg");
 }
 
 .carousel-cell__img3 {
   background-size    : cover;
-  background-position: left;
-  background-image   : url("../img/toDoListPreview.jpg");
+  background-position: top;
+  background-image   : url("../img/buildHomePreview.jpg");
 }
 
 .carousel-cell__img4 {
   background-size    : cover;
   background-position: left;
   background-image   : url("../img/calculator.jpg");
+}
+
+.carousel-cell__img5 {
+  background-size    : cover;
+  background-position: left;
+  background-image   : url("../img/toDoListPreview.jpg");
 }
 
 .main-carousel {
